@@ -8,7 +8,9 @@ import std_msgs.msg
 import sensor_msgs.msg
 from std_msgs.msg import Header
 import geometry_msgs.msg
-import math
+import math 
+import time
+
 
 def circle(radius,res,start):
    waypoints = []
@@ -29,7 +31,7 @@ robot = moveit_commander.RobotCommander()    #robot commander to interface to th
 scene = moveit_commander.PlanningSceneInterface()
 arm_group = moveit_commander.MoveGroupCommander('arm')      #moving group commander
 
-## creating a display trajextory publisher which is used later to publish trajectories fro Rviz to visualize
+## creating a display trajextory publisher which is used later to publish trajectories for Rviz to visualize
 display_trajectory_publisher = rospy.Publisher('/move_group/display_planned_path', moveit_msgs.msg.DisplayTrajectory, queue_size=1)
 
 r = .075
