@@ -22,7 +22,7 @@
 
   <!-- Run a python script to the send a service call to gazebo_ros to spawn a URDF robot -->
   <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
-     args="-urdf -model assem_urdf10_description -z 0.02 -param robot_description"/>
+     args="-urdf -model open_manipulator_description -z 0.02 -param robot_description"/>
 
   <node name="tf_footprint_base" pkg="tf" type="static_transform_publisher" args="0 0 0 0 0 0 base_link base_footprint 40" />
 
