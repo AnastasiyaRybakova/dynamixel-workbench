@@ -113,7 +113,7 @@ After the clonning the package of the manipulator which is includingg the Python
 
 ## To run the simulation in Gazebo and MoveIt you should run:
 
-            $ roslaunch open_manipulator_gazebo start_sumilation.launch
+            $ roslaunch open_manipulator_gazebo start_simulation.launch
             $ roslaunch open_manipulator_moveit_config open_manipulator_planning_execution.launch
 
 After running launch files you will be able to see the results as shown below:
